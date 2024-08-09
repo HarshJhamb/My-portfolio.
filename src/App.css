@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 1, 35);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  overflow-x: hidden; /* Ensure no horizontal overflow */
+}
+
+header {
+  color: white;
+  background-color: rgb(26, 26, 58);
+}
+
+nav { 
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 21px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ff00ea;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.right {
+  margin-left: 112px;
+  margin-right: -80px;
+}
+
+.left {
+  font-size: 1.6rem;
+  font-family: "Sedan", serif;
+}
+
+.left:hover {
+  font-size: 2rem;
+}
+
+.FirstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0;
+}
+
+.leftSection {
+  font-size: 2.9rem;
+  width: 37%;
+  margin: 100px 0;
+  font-family: "Sedan", serif;
+  text-align: center;
+}
+
+.harsh {
+  color: rgb(162, 74, 244);
+}
+
+#element {
+  color: rgb(167, 88, 242);
+}
+
+.secondSection {
+  margin: auto;
+  max-width: 80vw;
+  height: 430px;
+}
+
+ main hr {
+  border: 0;
+  background-color: rgb(199, 124, 240);
+  margin: 30px 80px;
+  height: 1px;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+
+.box {
+  background-color: rgb(254, 254, 255);
+  height: 2px;
+  width: 81.1vw;
+  margin: 56px 0;
+  display: flex;
+}
+
+.box2 {
+  background-color: rgb(252, 252, 252);
+  height: 2.5px;
+  width: 81.1vw;
+  display: flex;
+}
+
+.vertical {
+  width: 1px;
+  height: 93px;
+  background-color: white;
+  margin: 0 120px;
+}
+
+.vertical2 {
+  width: 1px;
+  height: 93px;
+  background-color: white;
+  margin: 0 80px;
+}
+
+.logo {
+  display: cover;
+}
+
+.img7 {
+  max-width: 170px;
+  position: relative;
+  top: -50px;
+  height: 50px;
+}
+
+.vertical-title {
+  position: relative;
+  margin: 38px 0;
+}
+
+.vertical-desc {
+  font-size: 12px;
+  width: 150px;
+  color: grey;
+}
+
+.vertical-title1 {
+  position: relative;
+  margin: 65px 0;
+}
+
+.footer {
+  display: flex;
+  padding: 35px 150px;
+  justify-content: space-evenly;
+}
+
+footer {
+  background: rgb(1, 1, 5);
+  height: 200px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer div {
+  width: 200px;
+}
+
+.allrights {
+  text-align: center;
+  color: grey;
+  font-size: small;
+}
+
+.btn1 {
+  background-color: rgb(1, 1, 35);
+  color: white;
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btns {
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn1:hover {
+  border: 3px solid white;
+}
+
+.rightSection {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  box-sizing: border-box;
+} 
+
+.rightSection::before {
+  content: '';
+  filter: blur(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 80%, rgb(116, 59, 182), white);
+  animation: rotate 2.1s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.whatsapp-image {
+  display: flex;
+  justify-content: center;
+  height: 750px;
+}
+
+.box1:hover {
+  box-shadow: rgba(255, 255, 255, 0.975) 0px 2px 4px 0px, rgb(239, 240, 241) 2px 4px 20px 0px, rgb(239, 240, 241) 2px 4px 20px 0px;
+}
+
+.box1 {
+  box-shadow: rgb(84, 85, 86) 6px 2px 16px 0px, rgba(120, 119, 119, 0.8) -6px -2px 16px 0px;
+}
+
+.button:hover .arrow {
+  transform: translateX(10px);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+.button:hover{
+box-shadow: rgba(132, 0, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px 12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 20px 13px, rgba(0, 0, 0, 0.09) 0px 10px 5px;
+}
+
+  
+  
+
